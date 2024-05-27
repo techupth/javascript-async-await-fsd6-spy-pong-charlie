@@ -36,10 +36,10 @@ let getJohnOrders = () => {
 
 async function asynchronousFuction() {
   try {
-    const JohnProfile = await getJohnProfile();
-    console.log(JohnProfile);
-    const JohnOrders = await getJohnOrders();
-    console.log(JohnOrders);
+    const johnProfile = await getJohnProfile();
+    console.log(johnProfile);
+    const johnOrders = await getJohnOrders();
+    console.log(johnOrders);
   } catch (error){
     console.log(error)
   }

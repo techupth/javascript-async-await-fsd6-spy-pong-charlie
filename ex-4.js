@@ -15,8 +15,12 @@ let getJohnProfile = () => {
 // Start coding here
 
 async function asynchronousFunction() {
-  const JohnProfile = await getJohnProfile();
-  console.log(JohnProfile);
+  try {
+    const johnProfile = await getJohnProfile();
+    console.log(johnProfile);
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 asynchronousFunction()
