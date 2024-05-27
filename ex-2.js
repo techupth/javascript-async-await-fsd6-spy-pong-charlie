@@ -13,3 +13,15 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+
+const resolve = (data) => {
+  console.log(data)
+}
+
+const reject = (error) => {
+  console.log(error)
+}
+
+getJohnProfile().then(resolve).catch(reject)
+
+// console.log()
